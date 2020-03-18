@@ -74,7 +74,7 @@ voronoi_polygon = function(data, x = 'x', y = 'y', outline = NULL, data.frame=FA
            min(extent@ymin, min(y)),
            max(extent@ymax, max(y)))
   }else{
-    rw = NULL
+    rw = c(-52.5,52.5,-34,34)
   }
   pts = SpatialPointsDataFrame(cbind(x, y), data, match.ID = T)
   vor_desc = tile.list(deldir(pts@coords[, 1], pts@coords[, 2],
