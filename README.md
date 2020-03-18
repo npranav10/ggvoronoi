@@ -2,6 +2,8 @@
 
 # ggvoronoi: Voronoi Diagrams and Heatmaps with 'ggplot2'
 
+# (Forked from (https://github.com/garretrc/ggvoronoi)) 
+# All Credits to the original author.
 ## Overview
 
 ['ggvoronoi']( https://CRAN.R-project.org/package=ggvoronoi) is an R package that allows for easy creation and manipulation of [Voronoi diagrams](https://en.wikipedia.org/wiki/Voronoi_diagram), which are tools for determining nearest neighbor regions for a given set of points. 
@@ -28,7 +30,7 @@ install.packages("ggvoronoi")
 Or install the latest development version from this repository:
 
 ```r
-remotes::install_github("garretrc/ggvoronoi", dependencies = TRUE, build_opts = c("--no-resave-data"))
+remotes::install_github("npranav10/ggvoronoi", dependencies = TRUE, build_opts = c("--no-resave-data"))
 ```
 
 Finally, with either verison you can load the R package with the typical method:
@@ -36,25 +38,3 @@ Finally, with either verison you can load the R package with the typical method:
 ```r
 library(ggvoronoi)
 ```
-
-## Getting Started
-
-With the vignette, you can view some examples and create your first Voronoi diagram!
-
-```r
-vignette("ggvoronoi")
-```
-
-Alternatively, the vignette is available [here.](http://htmlpreview.github.io/?https://github.com/garretrc/ggvoronoi/blob/master/vignettes/ggvoronoi.html)
-
-## Contact info
-
-For questions about usage/syntax or for reporting bugs, email Robert Garrett at garretrc@miamioh.edu or raise an issue on this repository. 
-
-To contribute to the package or see past contributions, see the [CONTRIBUTING.md](CONTRIBUTING.md) file
-
-## Changes
-
-v0.8.2: Added unit tests using ['testthat']( https://CRAN.R-project.org/package=testthat) and ['vdiffr']( https://CRAN.R-project.org/package=vdiffr). Minor improvements to vignette and README.md
-
-v0.8.1: Fixed bug when using a discrete value for fill mapping. Removed google maps API call in the vignette.
